@@ -1,0 +1,6 @@
+CC-EST2015-ALLDATA.csv filter=lfs diff=lfs merge=lfs -text
+countypopmonthasrh.csv filter=lfs diff=lfs merge=lfs -text
+US_Unemployment_Oct2012.csv filter=lfs diff=lfs merge=lfs -text
+us_demographics_2016.html filter=lfs diff=lfs merge=lfs -text
+us_demographics.html filter=lfs diff=lfs merge=lfs -text
+*.shp filter=lfs diff=lfs merge=lfs -text
