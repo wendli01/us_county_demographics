@@ -9,24 +9,51 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <script>
+    </script>
 </head>
 <body>
 <div class="container centered">
-    <h1>US county-level Demographics</h1>
+    <br/>
+    <h3>US county-level Demographics</h3>
 
     Based on <a href=https://data.nber.org/census/popest/countypopmonthasrh.csv>National Bureau of Economic Research
-    Census data</a> with <a href="https://www2.census.gov/geo/tiger/TIGER2017/COUNTY/tl_2017_us_county.zip">2017 census TIGER</a> county shapes.
+    Census data</a> with <a href="https://www2.census.gov/geo/tiger/TIGER2017/COUNTY/tl_2017_us_county.zip">2017 census
+    TIGER</a> county shapes.
+
+    <div class="alert alert-light">
+        Loading might take some time, about 30MB per map.
+    </div>
+    <br/>
+
+
+    <h4><a href="https://wendli01.github.io/us_county_demographics/gender_balance_2016">Gender Balance</a></h4>
+    <div class="alert alert-light">
+        Hover over any county to see the gender balance over age groups and census years.
+    </div>
+    <br/>
+
+    <iframe id="gender_balance_iframe" src="https://wendli01.github.io/us_county_demographics/gender_balance_2016"
+            height="500" width="100%" style="border-style: none; border-radius: 10px;">
+        Could not load Gender Balance Map
+    </iframe>
 
     <br/>
-    <h2>Gender Balance</h2>
     <br/>
-    <iframe src="https://wendli01.github.io/us_county_demographics/gender_balance_2016" height="500"
-            width="100%"></iframe>
+
+
+    <h4><a href="https://wendli01.github.io/us_county_demographics/ethnic_pop_2016">Ethnic Population</a></h4>
+    <div class="alert alert-light">
+        Hover over any county to see the distribution of ethnicities over age groups.
+    </div>
     <br/>
-    <br/>
-    <h2>Ethnic Population</h2>
-    <br/>
-    <iframe src="https://wendli01.github.io/us_county_demographics/ethnic_pop_2016" height="500" width="100%"></iframe>
+
+    <iframe src="https://wendli01.github.io/us_county_demographics/ethnic_pop_2016" height="500"
+            width="100%" style="border-style: none; border-radius: 10px;">
+        Could not load Population Ethnicity Map
+    </iframe>
+
     <br/>
 
     <div align="right">
