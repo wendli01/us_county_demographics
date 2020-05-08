@@ -5,7 +5,7 @@
     <title>US Demographics</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
@@ -27,34 +27,94 @@
     </div>
     <br/>
 
-
     <h4><a href="https://wendli01.github.io/us_county_demographics/gender_balance_2016">Gender Balance</a></h4>
-    <div class="alert alert-light">
-        Hover over any county to see the gender balance over age groups and census years.
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" href="#gender_balance_map">Interactive Map</a>
+                </h4>
+            </div>
+
+            <div id="gender_balance_map" class="panel-collapse collapse in">
+                <div class="panel-body">
+                    <div class="alert alert-light">
+                        Hover over any county to see the gender balance over age groups and census years.
+                    </div>
+                    <br/>
+                    <iframe id="gender_balance_iframe"
+                            src="https://wendli01.github.io/us_county_demographics/gender_balance_2016"
+                            height="500" width="100%" style="border-style: none; border-radius: 10px;">
+                        Could not load Gender Balance Map
+                    </iframe>
+                    <div align="right">
+                        <a href="https://wendli01.github.io/us_county_demographics/gender_balance_2016">Full Version</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <br/>
 
-    <iframe id="gender_balance_iframe" src="https://wendli01.github.io/us_county_demographics/gender_balance_2016"
-            height="500" width="100%" style="border-style: none; border-radius: 10px;">
-        Could not load Gender Balance Map
-    </iframe>
-
-    <br/>
-    <br/>
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" href="#gender_balance_overall">Overall Distribution</a>
+                </h4>
+            </div>
+            <div id="gender_balance_overall" class="panel-collapse collapse">
+                <div class="panel-body"><img
+                        src="https://wendli01.github.io/us_county_demographics/gender_balance_overall.png"
+                        alt="overall gender balance" width="100%">
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <h4><a href="https://wendli01.github.io/us_county_demographics/ethnic_pop_2016">Ethnic Population</a></h4>
-    <div class="alert alert-light">
-        Hover over any county to see the distribution of ethnicities over age groups.
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" href="#ethnic_pop_map">Interactive Map</a>
+                </h4>
+            </div>
+
+            <div id="ethnic_pop_map" class="panel-collapse collapse in">
+                <div class="panel-body">
+                    <div class="alert alert-light">
+                        Hover over any county to see the distribution of ethnicities over age groups.
+                    </div>
+                    <br/>
+                    <iframe src="https://wendli01.github.io/us_county_demographics/ethnic_pop_2016" height="500"
+                            width="100%" style="border-style: none; border-radius: 10px;">
+                        Could not load Population Ethnicity Map
+                    </iframe>
+                    <div align="right">
+                        <a href="https://wendli01.github.io/us_county_demographics/ethnic_pop_2016">Full Version</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <br/>
 
-    <iframe src="https://wendli01.github.io/us_county_demographics/ethnic_pop_2016" height="500"
-            width="100%" style="border-style: none; border-radius: 10px;">
-        Could not load Population Ethnicity Map
-    </iframe>
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" href="#ethnic_pop_overall">Overall Distribution</a>
+                </h4>
+            </div>
+            <div id="ethnic_pop_overall" class="panel-collapse collapse">
+                <div class="panel-body"><img
+                        src="https://wendli01.github.io/us_county_demographics/ethnic_pop_overall.png"
+                        alt="ethnic population balance" width="100%">
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <br/>
 
     <div align="right">
         <a href="https://github.com/wendli01/us_county_demographics">source</a>
