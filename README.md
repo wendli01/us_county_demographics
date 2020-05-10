@@ -16,6 +16,6 @@ https://www2.census.gov/geo/tiger/TIGER2017/COUNTY/tl_2017_us_county.zip
 
 ## Examples
 
-![female_percentage](https://github.com/wendli01/us_county_demographics/blob/master/female_percentage.png)
+![female_percentage](https://github.com/wendli01/us_county_demographics/blob/master/out/female_percentage.png)
 
-![population](https://github.com/wendli01/us_county_demographics/blob/master/population.png)
+![population](https://github.com/wendli01/us_county_demographics/blob/master/out/population.png)
